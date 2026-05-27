@@ -35,7 +35,7 @@ spring:
           min-idle: 2
 
 server:
-  port: 8080
+  port: 8090
 
 jwt:
   secret: your_256_bit_secure_random_string_minimum_32_characters

@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -ExecutionPolicy Bypass -File .claude/auto-compile.ps1",
+            "timeout": 180,
+            "statusMessage": "Auto-compiling after code change..."
+          }
+        ]
+      }
+    ]
+  }
+}
